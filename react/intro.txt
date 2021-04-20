@@ -1,0 +1,16 @@
+React is a Javascript library for building user interfaces, React  makes complex, interactive and reactive user interface simpler.
+
+- We can build similar UI using Javascript, but we would have to implement all the nitty gritty details ourselves (each and every time) which would increase the development time, 
+readability of the code and complexity of the code. 
+
+- React will provide us with some basic UI components which enables us to build the UI faster and in an efficient way also makes it less error prone.
+- React is all abouut components
+
+What are SPA (Single page applications)?
+- 
+
+What is Component in react?
+- It is a basic building block of react, all UI's in an completed react application is comprised of components
+
+
+
