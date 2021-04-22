@@ -1,5 +1,7 @@
 React is a Javascript library for building user interfaces, React  makes complex, interactive and reactive user interface simpler.
 
+- Javascript Uses imperitive approach to create UI on the screen, that is we need give clear step by step instructions to the browser in Javascript.
+
 - We can build similar UI using Javascript, but we would have to implement all the nitty gritty details ourselves (each and every time) which would increase the development time, 
 readability of the code and complexity of the code. 
 
@@ -11,6 +13,28 @@ What are SPA (Single page applications)?
 
 What is Component in react?
 - It is a basic building block of react, all UI's in an completed react application is comprised of components
+- Components are re-usable building blocks in UI, but we dont have to reuse it, its one of the component's traits
+- Components are a combination of html code, css code for some styling and some Javascript code for logic
+- These are custom HTML tags
+
+Why Components?
+ - it has reusablity 
+ - it has separation of concerns
+
+- React uses declarative approach - it defines the desired target state(s) and let treact figure out the actual Javascript DOM instructions
+
+
+As everything in an react app is a component, we build a component tree (custom html tags tree)
+
+                                  <App />
+                                /         \
+                          <Header />    <Tasks />
+                                       /        \
+                                    <Task />   <Task />
+
+
+                                    
+
 
 
 
