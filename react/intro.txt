@@ -33,8 +33,9 @@ As everything in an react app is a component, we build a component tree (custom 
                                     <Task />   <Task />
 
 
-                                    
-
-
+Composition in React?
+- combining Custom built components with other components be it cutom built tags and in-built tags to create complex UI, 
+herein making thr code modular and reuable
+- It is called as wrapper components, which uses props.children to help combine with other components
 
 
