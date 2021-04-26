@@ -11,8 +11,23 @@ readability of the code and complexity of the code.
 What are SPA (Single page applications)?
 - 
 
+
+What kind of code do you write in react.js?
+- Declarative  JS code - With react.js you define the goal (i.e. what should be shown on 
+the screen) and let react figure out how to get there.
+
+WHat is JSX?
+It is a special non-standard syntax which is enabled in react projects. It gets compiled to
+standard JS  code behind the scenes.
+
+What does declarative means?
+- You define the desired outcome (e.g. a target UI) and let the library (React) figure out the steps
+
+What does imperative mean?
+- You define the individual steps thats need to be taken to achieve a desired outcome (eg. target UI)
+
 What is Component in react?
-- It is a basic building block of react, all UI's in an completed react application is comprised of components
+- It is a basic building block of react, all UI's in an completed react application is comprised of various combination of components
 - Components are re-usable building blocks in UI, but we dont have to reuse it, its one of the component's traits
 - Components are a combination of html code, css code for some styling and some Javascript code for logic
 - These are custom HTML tags
@@ -24,7 +39,8 @@ Why Components?
 - React uses declarative approach - it defines the desired target state(s) and let treact figure out the actual Javascript DOM instructions
 
 
-As everything in an react app is a component, we build a component tree (custom html tags tree)
+As everything in an react app is a component, we build a component tree (custom html tags tree) that's mounted into a DOM
+node
 
                                   <App />
                                 /         \
@@ -37,5 +53,11 @@ Composition in React?
 - combining Custom built components with other components be it cutom built tags and in-built tags to create complex UI, 
 herein making thr code modular and reuable
 - It is called as wrapper components, which uses props.children to help combine with other components
+
+Ho do you pass data between components?
+- VIa "custom HTML attributes" (better known as props)
+
+How can you output dynamic data in React components (i.e. in the returned JSX code)?
+- By using single curly braces (open and close) with any JS expression with in it
 
 

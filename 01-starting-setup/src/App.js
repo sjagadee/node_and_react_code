@@ -1,10 +1,12 @@
+import React from "react";
 
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 // custom components are uppercase, reacts detects custom components through uppercase
 // it also detects built in components through lowercase
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -12,7 +14,11 @@ function App() {
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
-    { id: "e2", title: "New TV", amount: 799.49, date: new Date(2021, 2, 12) },
+    { id: "e2", 
+      title: "New TV", 
+      amount: 799.49, 
+      date: new Date(2021, 2, 12) 
+    },
     {
       id: "e3",
       title: "Car Insurance",
@@ -27,10 +33,17 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (expenseDataReceived) => {
+    console.log(expenseDataReceived);
+    expenses.push(expenseDataReceived);
+  }
+
   return (
-    <Expenses expenses = {expenses} />
-    
+    <div>
+      <NewExpense onAddExpenseData={addExpenseHandler}/>
+      <Expenses expenses={expenses} />
+    </div>
   );
-}
+};
 
 export default App;
